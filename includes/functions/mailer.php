@@ -1,13 +1,13 @@
 <?php
 // Incluir configuração SMTP
-require_once 'smtp_config.php';
+require_once __DIR__ . '/../config/smtp_config.php';
 
 // Função para enviar email usando PHPMailer
 function sendEmail($to, $subject, $message, $attachments = []) {
     global $smtp_config;
     
     // Verificar se a biblioteca PHPMailer está instalada
-    if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    if (!file_exists(__DIR__ . '/../../vendor/autoload.php')) {
         // Se não estiver instalada, retornar erro
         return [
             'success' => false,
@@ -16,7 +16,7 @@ function sendEmail($to, $subject, $message, $attachments = []) {
     }
     
     // Incluir o autoloader do Composer
-    require_once __DIR__ . '/../vendor/autoload.php';
+    require_once __DIR__ . '/../../vendor/autoload.php';
     
     // Criar instância do PHPMailer
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
