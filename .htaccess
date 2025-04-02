@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# Redirecionar /admin para /admin/index.php
+RewriteRule ^admin$ admin/index.php [L]
+
+# Redirecionar /admin/ para /admin/index.php
+RewriteRule ^admin/$ admin/index.php [L]
+
+# Redirecionar /public/admin para /admin/index.php
+RewriteRule ^public/admin$ admin/index.php [L]
+
+# Redirecionar /public/admin/ para /admin/index.php
+RewriteRule ^public/admin/$ admin/index.php [L]
+
+# Redirecionar /public/admin/index.php para /admin/index.php
+RewriteRule ^public/admin/index.php$ admin/index.php [L]
+
+# Redirecionar /public/admin/login.php para /admin/login.php
+RewriteRule ^public/admin/login.php$ admin/login.php [L]

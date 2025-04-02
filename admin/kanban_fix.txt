@@ -1,0 +1,32 @@
+<!-- Kanban Board -->
+<div class="kanban-container">
+    <div class="kanban-board">
+        <?php $kanbanColumns = getKanbanColumns($conn); ?>
+        <?php foreach ($kanbanColumns as $column): ?>
+        <div class="col-md-3">
+            <div class="card kanban-column">
+                <div class="card-header kanban-column-header">
+                    <h5 class="mb-0"><?php echo htmlspecialchars($column['name']); ?></h5>
+                    <div class="kanban-column-actions">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="edit-column" data-column-id="<?php echo $column['id']; ?>">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-action="delete-column" data-column-id="<?php echo $column['id']; ?>">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body kanban-column-body" data-status="<?php echo htmlspecialchars($column['status_key']); ?>">
+                    <!-- Conteúdo das colunas permanece o mesmo -->
+                </div>
+            </div>
+        </div>
+        <?php endforeach; ?>
+        
+        <!-- Adicionar nova coluna diretamente no quadro -->
+        <div class="kanban-add-column" data-bs-toggle="modal" data-bs-target="#addColumnModal">
+            <i class="bi bi-plus-circle"></i>
+            <span>Adicionar Coluna</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpExpert - Sistema de Atendimento Multicanal</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    
+    <!-- Font Awesome 6 CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/icone_512px.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="img/icone_512px.png">
+    <meta name="theme-color" content="#007498">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" alt="HelpExpert Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Benefícios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#recursos">Recursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#como-funciona">Como Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#video">Vídeo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planos">Planos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex ms-lg-3">
+                        <a href="#experimente" class="btn btn-primary">Experimente Grátis</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3 typing-effect">Atendimento multicanal simplificado</h1>
+                    <p class="lead mb-4 fade-in">Gerencie todos os seus atendimentos por WhatsApp, Instagram, Facebook e outros canais em uma única plataforma. Aumente sua produtividade e satisfação dos clientes.</p>
+                    <div class="d-flex flex-wrap gap-2 slide-in-left">
+                        <a href="#experimente" class="btn btn-primary btn-lg">Começar Agora</a>
+                        <a href="#video" class="btn btn-outline-secondary btn-lg">Ver Demonstração</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <img src="img/hero-illustration.png" alt="HelpExpert Dashboard" class="img-fluid rounded-4 shadow-lg scale-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estatísticas Section -->
+    <section class="stats py-5" id="estatisticas">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="98">0</h2>
+                        <p class="stat-text">% de Satisfação</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="5000">0</h2>
+                        <p class="stat-text">Clientes Ativos</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <div class="stat-item stat-item-large">
+                        <h2 class="counter" data-target="15000000">0</h2>
+                        <p class="stat-text">Mensagens por Mês</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="stat-item">
+                        <h2 class="counter" data-target="42">0</h2>
+                        <p class="stat-text">Minutos Economizados por Dia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section class="benefits py-5" id="beneficios">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Benefícios</h2>
+                    <p class="section-subtitle">Por que escolher o HelpExpert para o seu negócio</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Multi Agentes</h3>
+                            <p class="card-text">Organize sua equipe com múltiplos agentes trabalhando simultaneamente por departamentos, otimizando o fluxo de atendimento.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Setores Público e Privado</h3>
+                            <p class="card-text">Soluções adaptadas tanto para empresas privadas de todos os portes quanto para órgãos e instituições públicas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Integrações Avançadas</h3>
+                            <p class="card-text">Integre com Typebot, N8N e outras ferramentas de IA para automatizar processos e criar experiências personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Multicanal</h3>
+                            <p class="card-text">Atenda seus clientes por WhatsApp, Instagram, Facebook e outros canais em uma única plataforma.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Relatórios Detalhados</h3>
+                            <p class="card-text">Acompanhe o desempenho da sua equipe e a satisfação dos clientes com relatórios completos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-wrapper mb-4">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3 class="h5 mb-3">Implementação Especializada</h3>
+                            <p class="card-text">Conte com empresas parceiras especializadas para implementação de bots e automações personalizadas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos Section -->
+    <section class="features py-5" id="recursos">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Recursos Principais</h2>
+                    <p class="section-subtitle">Conheça as funcionalidades que tornam o HelpExpert a solução ideal para seu negócio</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <img src="img/features-illustration.png" alt="HelpExpert Features" class="img-fluid rounded-4 shadow-lg">
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="feature-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-2">Atendimento Multicanal</h3>
+                                <p class="mb-0">Centralize todos os seus canais de comunicação em uma única plataforma: WhatsApp, Instagram, Facebook, e-mail e muito mais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-2">Departamentos Personalizados</h3>
+                                <p class="mb-0">Crie departamentos específicos para cada área da sua empresa, garantindo que as mensagens cheguem aos agentes certos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-2">Chatbots Inteligentes</h3>
+                                <p class="mb-0">Automatize o primeiro contato e tarefas repetitivas com chatbots personalizáveis que se integram com Typebot, N8N e ferramentas de IA.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-2">Relatórios Avançados</h3>
+                                <p class="mb-0">Acompanhe métricas importantes como tempo de resposta, satisfação do cliente e desempenho dos agentes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="d-flex align-items-start">
+                            <div class="feature-icon me-3">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <div>
+                                <h3 class="h5 mb-2">API e Integrações</h3>
+                                <p class="mb-0">Conecte o HelpExpert com seus sistemas existentes através de nossa API e integrações com ferramentas populares.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Funciona Section -->
+    <section class="how-it-works py-5" id="como-funciona">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Como Funciona</h2>
+                    <p class="section-subtitle">Comece a usar o HelpExpert em apenas 4 passos simples</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 order-lg-2" data-aos="fade-left">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Como usar o HelpExpert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <div class="steps-wrapper">
+                        <div class="step-item" data-aos="fade-up">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3 class="h5">Crie sua conta</h3>
+                                <p>Registre-se gratuitamente e configure seu perfil em menos de 5 minutos.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3 class="h5">Conecte seus canais</h3>
+                                <p>Integre facilmente WhatsApp, Instagram, Facebook e outros canais de comunicação.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3 class="h5">Configure sua equipe</h3>
+                                <p>Adicione membros da sua equipe e defina permissões de acesso para cada um.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3 class="h5">Comece a atender</h3>
+                                <p>Pronto! Agora você pode começar a atender seus clientes de forma centralizada e eficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-5">
+                        <a href="#experimente" class="btn btn-primary btn-lg">Começar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos Section -->
+    <section class="pricing py-5 bg-light" id="planos">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Planos e Preços</h2>
+                    <p class="section-subtitle">Escolha o plano que melhor se adapta às necessidades do seu negócio</p>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-private-tab" data-bs-toggle="pill" data-bs-target="#pills-private" type="button" role="tab" aria-controls="pills-private" aria-selected="true">Setor Privado</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-public-tab" data-bs-toggle="pill" data-bs-target="#pills-public" type="button" role="tab" aria-controls="pills-public" aria-selected="false">Setor Público</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-private" role="tabpanel" aria-labelledby="pills-private-tab">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Básico</h3>
+                                    <h4 class="pricing-price">R$ 97<span>/mês</span></h4>
+                                    <p class="pricing-description">Ideal para pequenas empresas</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i class="fas fa-check-circle"></i> 2 Usuários</li>
+                                    <li><i class="fas fa-check-circle"></i> 1 Número de WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Atendimento por WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Chatbot Básico</li>
+                                    <li><i class="fas fa-check-circle"></i> Departamentos</li>
+                                    <li class="disabled"><i class="fas fa-times-circle"></i> Instagram e Facebook</li>
+                                    <li class="disabled"><i class="fas fa-times-circle"></i> Integração Typebot/N8N</li>
+                                    <li class="disabled"><i class="fas fa-times-circle"></i> API Avançada</li>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="#contato" class="btn btn-outline-secondary btn-lg">Escolher Plano</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <div class="pricing-card pricing-popular h-100">
+                                <div class="popular-badge">Mais Popular</div>
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Profissional</h3>
+                                    <h4 class="pricing-price">R$ 197<span>/mês</span></h4>
+                                    <p class="pricing-description">Para empresas em crescimento</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i class="fas fa-check-circle"></i> 5 Usuários</li>
+                                    <li><i class="fas fa-check-circle"></i> 2 Números de WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Atendimento por WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Chatbot Avançado</li>
+                                    <li><i class="fas fa-check-circle"></i> Departamentos</li>
+                                    <li><i class="fas fa-check-circle"></i> Instagram e Facebook</li>
+                                    <li><i class="fas fa-check-circle"></i> Integração Typebot</li>
+                                    <li class="disabled"><i class="fas fa-times-circle"></i> API Avançada</li>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="#contato" class="btn btn-primary btn-lg">Escolher Plano</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Empresarial</h3>
+                                    <h4 class="pricing-price">R$ 397<span>/mês</span></h4>
+                                    <p class="pricing-description">Para médias e grandes empresas</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i class="fas fa-check-circle"></i> Usuários Ilimitados</li>
+                                    <li><i class="fas fa-check-circle"></i> 5 Números de WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Atendimento Multicanal</li>
+                                    <li><i class="fas fa-check-circle"></i> Chatbot Personalizado</li>
+                                    <li><i class="fas fa-check-circle"></i> Departamentos Ilimitados</li>
+                                    <li><i class="fas fa-check-circle"></i> Instagram e Facebook</li>
+                                    <li><i class="fas fa-check-circle"></i> Integração Typebot/N8N/IA</li>
+                                    <li><i class="fas fa-check-circle"></i> API Avançada</li>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="#contato" class="btn btn-outline-secondary btn-lg">Escolher Plano</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-public" role="tabpanel" aria-labelledby="pills-public-tab">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4 mb-lg-0">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Institucional</h3>
+                                    <h4 class="pricing-price">R$ 497<span>/mês</span></h4>
+                                    <p class="pricing-description">Para órgãos e instituições públicas</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i class="fas fa-check-circle"></i> 10 Usuários</li>
+                                    <li><i class="fas fa-check-circle"></i> 3 Números de WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Atendimento Multicanal</li>
+                                    <li><i class="fas fa-check-circle"></i> Chatbot Personalizado</li>
+                                    <li><i class="fas fa-check-circle"></i> 5 Departamentos</li>
+                                    <li><i class="fas fa-check-circle"></i> Instagram e Facebook</li>
+                                    <li><i class="fas fa-check-circle"></i> Integração Typebot</li>
+                                    <li class="disabled"><i class="fas fa-times-circle"></i> API Avançada</li>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="#contato" class="btn btn-outline-secondary btn-lg">Solicitar Proposta</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="pricing-card h-100">
+                                <div class="pricing-header">
+                                    <h3 class="pricing-title">Governamental</h3>
+                                    <h4 class="pricing-price">R$ 997<span>/mês</span></h4>
+                                    <p class="pricing-description">Para grandes órgãos governamentais</p>
+                                </div>
+                                <ul class="pricing-features">
+                                    <li><i class="fas fa-check-circle"></i> Usuários Ilimitados</li>
+                                    <li><i class="fas fa-check-circle"></i> 10 Números de WhatsApp</li>
+                                    <li><i class="fas fa-check-circle"></i> Atendimento Multicanal</li>
+                                    <li><i class="fas fa-check-circle"></i> Chatbot Personalizado</li>
+                                    <li><i class="fas fa-check-circle"></i> Departamentos Ilimitados</li>
+                                    <li><i class="fas fa-check-circle"></i> Instagram e Facebook</li>
+                                    <li><i class="fas fa-check-circle"></i> Integração Typebot/N8N/IA</li>
+                                    <li><i class="fas fa-check-circle"></i> API Avançada</li>
+                                </ul>
+                                <div class="pricing-footer">
+                                    <a href="#contato" class="btn btn-primary btn-lg">Solicitar Proposta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <div class="alert alert-info p-4 mx-auto" style="max-width: 800px;">
+                        <h4 class="h5 mb-3"><i class="fas fa-info-circle me-2"></i> Implementação Especializada</h4>
+                        <p class="mb-0">Precisa de ajuda com integrações avançadas? Contamos com parceiros especializados na implementação de bots com Typebot, N8N e soluções de IA personalizadas. <a href="#contato" class="alert-link">Entre em contato</a> para mais informações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="testimonials py-5 bg-light" id="depoimentos">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title">Depoimentos</h2>
+                    <p class="section-subtitle">Veja o que nossos clientes estão dizendo sobre o HelpExpert</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"O HelpExpert revolucionou nosso atendimento ao cliente. Conseguimos reduzir o tempo de resposta em 70% e aumentar a satisfação dos clientes."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonial-avatar-1.png" alt="Avatar" class="testimonial-avatar">
+                            <div>
+                                <h4 class="testimonial-name">Ana Silva</h4>
+                                <p class="testimonial-position">Gerente de Atendimento, Empresa ABC</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"A integração com Typebot e N8N nos permitiu automatizar 60% dos atendimentos iniciais, liberando nossa equipe para focar em casos mais complexos."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonial-avatar-2.png" alt="Avatar" class="testimonial-avatar">
+                            <div>
+                                <h4 class="testimonial-name">Carlos Mendes</h4>
+                                <p class="testimonial-position">Diretor de Tecnologia, Tech Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Como órgão público, precisávamos de uma solução segura e eficiente. O HelpExpert atendeu todas as nossas necessidades e superou nossas expectativas."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="img/testimonial-avatar-3.png" alt="Avatar" class="testimonial-avatar">
+                            <div>
+                                <h4 class="testimonial-name">Juliana Costa</h4>
+                                <p class="testimonial-position">Coordenadora de Atendimento, Prefeitura Municipal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="video-section py-5" id="video">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="section-title text-white">Conheça o HelpExpert</h2>
+                    <p class="section-subtitle text-white">Veja como nossa plataforma pode transformar seu atendimento</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="HelpExpert Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="video-card">
+                        <h2>Transforme seu atendimento</h2>
+                        <p>Veja como o HelpExpert pode ajudar sua empresa a gerenciar todos os canais de atendimento em uma única plataforma, aumentando a produtividade da sua equipe e a satisfação dos seus clientes.</p>
+                        <a href="#experimente" class="btn btn-primary">Experimente Grátis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq py-5" id="faq">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Perguntas Frequentes</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Tire suas dúvidas sobre o HelpExpert</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="200">
+                        <!-- Pergunta 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    O que é o HelpExpert?
+                                </button>
+                            </h3>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O HelpExpert é uma plataforma de atendimento multicanal que permite gerenciar conversas de WhatsApp, Instagram, Facebook e outros canais em um único lugar. Com ele, sua equipe pode atender clientes de forma eficiente, automatizar respostas e acompanhar métricas de desempenho.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Preciso ter o WhatsApp Business para usar o HelpExpert?
+                                </button>
+                            </h3>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim, para integrar o WhatsApp ao HelpExpert, você precisa ter uma conta do WhatsApp Business. Nossa plataforma se conecta à API oficial do WhatsApp Business para garantir uma integração segura e confiável.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Quantos atendentes posso adicionar na plataforma?
+                                </button>
+                            </h3>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O número de atendentes depende do plano contratado. No plano Básico, você pode adicionar até 2 usuários. No plano Profissional, até 5 usuários. E no plano Empresarial, você tem usuários ilimitados. Todos os planos podem ser personalizados conforme a necessidade da sua empresa.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Como funciona o chatbot do HelpExpert?
+                                </button>
+                            </h3>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O chatbot do HelpExpert permite criar fluxos de conversa automatizados para responder perguntas frequentes, qualificar leads e direcionar clientes para o atendente certo. Você pode configurar respostas para palavras-chave específicas e criar árvores de decisão baseadas nas respostas dos clientes.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pergunta 5 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    O HelpExpert oferece suporte técnico?
+                                </button>
+                            </h3>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim, oferecemos suporte técnico em todos os planos. No plano Básico, o suporte é por e-mail em horário comercial. Nos planos Profissional e Empresarial, oferecemos suporte por chat e telefone, além de um gerente de contas dedicado no plano Empresarial.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section class="contact py-5 bg-light" id="contato">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title" data-aos="fade-up">Entre em Contato</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Estamos prontos para ajudar você a transformar seu atendimento</p>
+            </div>
+            
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="contact-info">
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope-fill"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="h5">E-mail</h3>
+                                <p>contato@helpexpert.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="bi bi-telephone-fill"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="h5">Telefone</h3>
+                                <p>(11) 4002-8922</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="bi bi-geo-alt-fill"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="h5">Endereço</h3>
+                                <p>Av. Paulista, 1000 - Bela Vista<br>São Paulo - SP, 01310-100</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-clock-fill"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3 class="h5">Horário de Atendimento</h3>
+                                <p>Segunda a Sexta: 9h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <form id="contactForm" action="process_contact.php" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Nome</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Seu nome completo" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Telefone</label>
+                                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Seu telefone">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Assunto</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="" selected disabled>Selecione um assunto</option>
+                                    <option value="info">Informações sobre planos</option>
+                                    <option value="demo">Solicitar demonstração</option>
+                                    <option value="support">Suporte técnico</option>
+                                    <option value="partner">Parceria</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensagem</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Sua mensagem" required></textarea>
+                            </div>
+                            
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                <label class="form-check-label" for="privacy">
+                                    Concordo com a <a href="#privacidade">Política de Privacidade</a>
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta py-5" id="experimente">
+        <div class="parallax-bg" style="background-image: url('img/cta-bg.jpg');"></div>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="cta-card" data-aos="zoom-in">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4 mb-lg-0">
+                                <h2 class="mb-4 typing-effect">Pronto para transformar seu atendimento?</h2>
+                                <p class="lead mb-4 fade-in">Experimente o HelpExpert gratuitamente por 14 dias. Sem compromisso, sem necessidade de cartão de crédito.</p>
+                                <ul class="feature-list mb-4">
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Acesso a todos os recursos</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Suporte técnico gratuito</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Configuração assistida</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i> Sem compromisso</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="lead-form-card">
+                                    <h3 class="h4 mb-4">Solicite uma demonstração</h3>
+                                    <form id="leadForm" action="process_lead.php" method="POST" enctype="multipart/form-data">
+                                        <div class="mb-3">
+                                            <label for="lead_name" class="form-label">Nome</label>
+                                            <input type="text" class="form-control" id="lead_name" name="lead_name" placeholder="Seu nome completo" required>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="lead_email" class="form-label">E-mail</label>
+                                            <input type="email" class="form-control" id="lead_email" name="lead_email" placeholder="Seu e-mail" required>
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="lead_phone" class="form-label">Telefone</label>
+                                            <input type="tel" class="form-control" id="lead_phone" name="lead_phone" placeholder="Seu telefone">
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="lead_company" class="form-label">Empresa</label>
+                                            <input type="text" class="form-control" id="lead_company" name="lead_company" placeholder="Nome da sua empresa">
+                                        </div>
+                                        
+                                        <div class="mb-3">
+                                            <label for="lead_employees" class="form-label">Número de funcionários</label>
+                                            <select class="form-select" id="lead_employees" name="lead_employees">
+                                                <option value="" selected disabled>Selecione</option>
+                                                <option value="1-5">1-5</option>
+                                                <option value="6-20">6-20</option>
+                                                <option value="21-50">21-50</option>
+                                                <option value="51-100">51-100</option>
+                                                <option value="101+">Mais de 100</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="form-check mb-3">
+                                            <input class="form-check-input" type="checkbox" id="lead_privacy" name="lead_privacy" required>
+                                            <label class="form-check-label" for="lead_privacy">
+                                                Concordo com a <a href="#privacidade" class="text-white">Política de Privacidade</a>
+                                            </label>
+                                        </div>
+                                        
+                                        <button type="submit" class="btn btn-primary w-100">Solicitar Demonstração</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="img/logo-white.png" alt="HelpExpert" height="40" class="mb-4">
+                    <p class="mb-4">Transforme seu atendimento ao cliente com nossa plataforma multicanal. Gerencie WhatsApp, Instagram, Facebook e mais em um único lugar.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Empresa</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Carreiras</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Parceiros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Produto</h5>
+                    <ul class="footer-links">
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Atualizações</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Suporte</h5>
+                    <ul class="footer-links">
+                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#">Central de Ajuda</a></li>
+                        <li><a href="#">Status</a></li>
+                        <li><a href="#">Documentação</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-6 col-md-4 col-lg-2">
+                    <h5 class="footer-title">Legal</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Termos de Uso</a></li>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenças</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 HelpExpert. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+                    <div class="d-flex justify-content-center justify-content-md-end">
+                        <img src="img/payment-methods.png" alt="Métodos de Pagamento" height="30">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    
+    <script>
+        // Inicializar AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        
+        // Contador para estatísticas
+        const counters = document.querySelectorAll('.counter');
+        
+        counters.forEach(counter => {
+            counter.innerText = '0';
+            
+            const updateCounter = () => {
+                const target = +counter.getAttribute('data-target');
+                const c = +counter.innerText;
+                
+                const increment = target / 200;
+                
+                if (c < target) {
+                    counter.innerText = `${Math.ceil(c + increment)}`;
+                    setTimeout(updateCounter, 1);
+                } else {
+                    counter.innerText = target.toLocaleString('pt-BR');
+                }
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        updateCounter();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            observer.observe(counter);
+        });
+        
+        // Efeito de digitação para títulos
+        const typingEffect = document.querySelector('.typing-effect');
+        if (typingEffect) {
+            const text = typingEffect.textContent;
+            typingEffect.textContent = '';
+            
+            let i = 0;
+            const typeWriter = () => {
+                if (i < text.length) {
+                    typingEffect.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                } else {
+                    typingEffect.classList.add('typing-started');
+                }
+            };
+            
+            setTimeout(typeWriter, 500);
+        }
+        
+        // Animações ao scroll
+        const animateElements = document.querySelectorAll('.fade-in, .scale-in, .slide-in-left, .slide-in-right, .rotate-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        animateElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Botão voltar ao topo
+        const backToTopBtn = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('active');
+            } else {
+                backToTopBtn.classList.remove('active');
+            }
+        });
+        
+        // Inicializar as abas de planos
+        document.addEventListener('DOMContentLoaded', function() {
+            var triggerTabList = [].slice.call(document.querySelectorAll('#pills-tab button'));
+            triggerTabList.forEach(function(triggerEl) {
+                var tabTrigger = new bootstrap.Tab(triggerEl);
+                triggerEl.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    tabTrigger.show();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

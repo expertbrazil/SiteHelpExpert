@@ -1,0 +1,35 @@
+# Arquivos de configuração sensíveis
+config.php
+includes/smtp_config.php
+
+# Arquivos de log
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*~
+
+# Diretórios do sistema
+vendor/
+node_modules/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de IDE e editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+.komodotools/
+nbproject/
+.DS_Store
+Thumbs.db
