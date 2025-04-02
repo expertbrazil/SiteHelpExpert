@@ -340,10 +340,33 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.disabled = true;
             submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Enviando...';
             
-            // Abordagem simplificada - redirecionar diretamente
-            setTimeout(() => {
-                window.location.href = 'obrigado.html';
-            }, 1000);
+            // Coletar dados do formulário
+            const formData = new FormData(this);
+            
+            // Enviar dados para o servidor em segundo plano
+            fetch('process_lead.php', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(response => {
+                console.log('Resposta recebida:', response);
+                // Redirecionar para a página de agradecimento
+                setTimeout(() => {
+                    window.location.href = 'obrigado.html';
+                }, 1000);
+            })
+            .catch(error => {
+                console.error('Erro:', error);
+                // Mesmo com erro, redirecionar para a página de agradecimento
+                // para não prejudicar a experiência do usuário
+                setTimeout(() => {
+                    window.location.href = 'obrigado.html';
+                }, 1000);
+            });
         });
     }
+
 });
