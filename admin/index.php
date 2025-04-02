@@ -8,7 +8,7 @@ if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== tru
 }
 
 // Incluir arquivo de configuração
-require_once "../config.php";
+require_once "../includes/config/config.php";
 
 // Selecionar o banco de dados
 $conn->exec("USE helpexpert");
@@ -188,10 +188,10 @@ if (isset($_GET['error'])) {
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
     
     <!-- Favicons -->
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../img/icone_512px.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../img/icone_512px.png">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/img/icone_512px.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/icone_512px.png">
     <meta name="theme-color" content="#007498">
     
     <style>
@@ -709,7 +709,7 @@ if (isset($_GET['error'])) {
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-logo">
-            <img src="../img/logo.png" alt="HelpExpert Logo" height="40">
+            <img src="../assets/img/logo.png" alt="HelpExpert Logo" height="40">
         </div>
         
         <nav class="nav flex-column">

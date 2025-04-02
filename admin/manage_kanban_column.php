@@ -8,7 +8,7 @@ if (!isset($_SESSION["admin_logged_in"]) || $_SESSION["admin_logged_in"] !== tru
 }
 
 // Incluir arquivo de configuração
-require_once __DIR__ . "/../config.php";
+require_once __DIR__ . "/../includes/config/config.php";
 
 // Selecionar o banco de dados
 $conn->exec("USE helpexpert");

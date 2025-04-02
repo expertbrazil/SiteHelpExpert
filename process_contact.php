@@ -1,8 +1,16 @@
 <?php
+/**
+ * Processamento do formulário de contato
+ */
+
 // Habilitar exibição de erros para depuração
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
+// Incluir arquivos necessários
+require_once 'includes/config/config.php';
+require_once 'includes/functions/mailer.php';
 
 // Criar arquivo de log para depuração
 $log_file = __DIR__ . '/debug_log.txt';
@@ -13,9 +21,6 @@ function debug_log($message) {
 }
 
 debug_log("Iniciando processamento do formulário de contato");
-
-require_once 'config.php';
-require_once 'includes/mailer.php';
 
 // Verificar se o banco de dados existe e criar se necessário
 try {

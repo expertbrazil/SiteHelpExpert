@@ -13,8 +13,8 @@ if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     exit;
 }
 
-// Incluir arquivo de conexão com o banco de dados
-require_once "../includes/db_connection.php";
+// Incluir arquivo de configuração
+require_once "../includes/config/config.php";
 
 // Verificar se os dados necessários foram fornecidos
 if (!isset($_POST["lead_id"]) || !isset($_POST["status"])) {

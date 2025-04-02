@@ -1,4 +1,16 @@
 <?php
+/**
+ * Processamento do formulário de lead
+ */
+
+// Incluir arquivos necessários
+require_once 'includes/config/config.php';
+require_once 'includes/functions/mailer.php';
+
+// Iniciar log de debug
+$debug_log = [];
+$debug_log[] = "Início do processamento do formulário de lead: " . date('Y-m-d H:i:s');
+
 // Habilitar exibição de erros para depuração
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -13,9 +25,6 @@ function debug_log($message) {
 }
 
 debug_log("Iniciando processamento do formulário de lead");
-
-require_once 'config.php';
-require_once 'includes/mailer.php';
 
 // Verificar se o banco de dados existe e criar se necessário
 try {

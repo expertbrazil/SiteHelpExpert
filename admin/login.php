@@ -1,8 +1,11 @@
 <?php
 session_start();
 
+// Incluir arquivo de configuração
+require_once "../includes/config/config.php";
+
 // Incluir arquivo de conexão com o banco de dados
-require_once "../includes/db_connection.php";
+require_once "../includes/config/db_connection.php";
 
 // Carregar o modelo de usuário
 require_once "../app/models/User.php";
@@ -55,10 +58,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicons -->
-    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="../img/icone_512px.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../img/icone_512px.png">
+    <link rel="icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="../assets/img/icone_512px.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/icone_512px.png">
     <meta name="theme-color" content="#007498">
     
     <style>
@@ -142,7 +145,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
     <div class="login-card">
         <div class="login-header">
-            <img src="../img/logo.png" alt="HelpExpert Logo" height="50">
+            <img src="../assets/img/logo.png" alt="HelpExpert Logo" height="50">
         </div>
         
         <div class="container p-4">
